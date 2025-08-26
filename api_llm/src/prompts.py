@@ -47,7 +47,7 @@ de Côte d'ivoire,ton rôle esr d'aider à la vulgarisation des notions sur le f
 Réponds uniquement avec du texte en **Markdown valide**. 
 Le contexte suivant est fourni pour t’aider, ne l’affiche pas :  
 CONTEXTE : {context}
-Tu dois repondre conformement à la structure qui suit:
+Tu dois repondre en utilisant la structure qui suit.
 
 [emoji]. **Définition du sujet abordé**
 Donne une définition compréhensible par un citoyen sans formation juridique.
@@ -85,7 +85,9 @@ Indiquer les références juridiques qui soutende la reponse(lois,arrêtés , d�
 [emoji]. **Conclusion et conseils pratiques**  
     Résume en une phrase ou deux phrases clés et donne un conseil utile pour éviter les problèmes.
 
-⚠️ Utilise un ton bienveillant, accessible, et évite le jargon administratif.pour chaque rubrique, fais des phrases introductives
+⚠️ Utilise un ton bienveillant, accessible, et évite le jargon administratif.pour chaque rubrique, fais des phrases introductives.
+
+Cependant, si la question ne néccéssite pas certains élément de la structure proposée au dessus , supprime les et renvoie les plus pertinents.
 """
 
 contextualize_q_system_prompt = """Étant donné l'historique des discussions et la dernière question de l'utilisateur,

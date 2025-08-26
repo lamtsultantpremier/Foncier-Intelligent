@@ -27,8 +27,8 @@ st.markdown(
     <style>
         section[data-testid="stSidebar"] {
             width: 300px !important;
-            background-color: #008000 !important;
-            border-right: 1px solid #e2e8f0 !important;
+            background-color: #000000 !important;
+            border-right: 1px solid #000000 !important;
         }
 
         div[data-testid="stSidebarContent"] {
@@ -43,14 +43,14 @@ st.markdown(
             border-radius: 0.5rem !important;
             text-align: left !important;
             transition: all 0.2s !important;
-            background-color: white !important;
+            background-color: #292929 !important;
             border: 1px solid #e2e8f0 !important;
-            color: #1e293b !important;
+            color: white !important;
         }
 
         .stButton button:hover {
-            background-color: #f1f5f9 !important;
-            border-color: #cbd5e1 !important;
+            background-color: #777777 !important;
+            border-color: #777777 !important;
         }
 
         .stForm button{
@@ -153,7 +153,9 @@ with st.sidebar:
                   st.session_state.messages = session["messages"]
 
 with st.container():
-   col2 , col1 = st.columns([0.8,0.2])
+   col_10 , col2 , col1 = st.columns([0.3,0.5,0.2])
+   with col_10:
+      st.image("images/armoirie.png" , width = 150)
    with col1:
       deconnexion = st.button(label = "Deconnexion" , use_container_width = True)
       if deconnexion:
