@@ -15,7 +15,7 @@ import config
 
 from typing import List
 
-model = ChatOpenAI(model="gpt-5", api_key=config.OPENAI_API_KEY)
+model = ChatOpenAI(model="gpt-4o", api_key=config.OPENAI_API_KEY)
 
 def extract_context_from_documents(documents: List[Document]) -> str:
     """
