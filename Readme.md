@@ -44,9 +44,15 @@ pip install -r requirements.txt
 streamlit run main.py
 
 ### III – Backend (dans une nouvelle instance de l'éditeur)
+1. Se déplacer dans le dossier backend :
 
+cd backend
+
+. Installer les dépendances :
 pip install -r requirements.txt
 
+2. Lancer le backend :
+uvicorn main:app --reload
 ### IV – API LLM (dans une nouvelle instance de l'éditeur)
 1. Se déplacer dans le dossier api_llm :
 
