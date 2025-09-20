@@ -36,13 +36,17 @@ L'application **Agent Conversationnel** dédié au foncier comporte trois partie
 ### II – Front-End (dans une nouvelle instance de l'éditeur)
 
 1. Se déplacer dans le dossier frontend :
+
 cd frontend
+
 . Installer les dépendances :
+
 ```bash
 pip install -r requirements.txt
 ```
 
 2. Lancer l'application :
+
 streamlit run main.py
 
 ### III – Backend (dans une nouvelle instance de l'éditeur)
