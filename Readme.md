@@ -38,7 +38,9 @@ L'application **Agent Conversationnel** dédié au foncier comporte trois partie
 1. Se déplacer dans le dossier frontend :
 cd frontend
 . Installer les dépendances :
+```bash
 pip install -r requirements.txt
+```
 
 2. Lancer l'application :
 streamlit run main.py
@@ -49,17 +51,26 @@ streamlit run main.py
 cd backend
 
 . Installer les dépendances :
+```bash
 pip install -r requirements.txt
-
+```
 2. Lancer le backend :
+
+```bash
 uvicorn main:app --reload
+```
 ### IV – API LLM (dans une nouvelle instance de l'éditeur)
+
 1. Se déplacer dans le dossier api_llm :
 
 cd api_llm
 
 . Installer les dépendances :
+```bash
 pip install -r requirements.txt
+```
 
 2. Lancer l’API LLM :
+```bash
 uvicorn main:app --reload --port 8001
+```
