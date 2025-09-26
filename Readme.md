@@ -14,6 +14,7 @@ L'application **Agent Conversationnel** dédié au foncier comporte trois partie
       ```bash
       python -m venv venv
       ```
+   3. Recupérer tous les fichiers environnements dans le dossier .ENV transmis par email pour s'assurer du bon fonctionnement de la solution
     
 2. **Activer l'environnement**
    - Sur Windows :
